@@ -3,28 +3,13 @@ import { Icon } from "astro-icon";
 import ContentSection from "~/components/content-section.astro";
 ---
 
-<ContentSection title="Just ship less" id="intro">
-  <Icon slot="eyebrow" name="logomark" class="h-32" />
+<ContentSection title="About" id="intro">
+  <Icon slot="eyebrow" name="simple-icons:airasia" class="h-32" />
   <Fragment slot="lead">
-    Astro is a new kind of site builder for the
-    <span class="text-primary">modern</span> web.
-    <span class="text-primary">Lightning-fast</span>
-    performance meets <span class="text-primary">powerful</span> developer experience.
+    Who me? I'm a <span class="text-primary">seasoned professional</span> with a decade of experience as an
+    early employee at a high-growth company.
+    Leveraging my expertise, I've now transitioned to building
+    <span class="text-primary">high-converting, trustworthy websites</span> for <span class="text-primary">local businesses</span>,
+    helping them achieve their online goals with your strategic approach and keen eye for design.
   </Fragment>
-  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
-    <a
-      href="https://docs.astro.build/"
-      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
-    >
-      <Icon pack="mdi" name="telescope" class="h-8" />
-      <span>Read the docs</span>
-    </a>
-    <a
-      href="https://astro.new/"
-      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
-    >
-      <Icon pack="mdi" name="rocket" class="h-8" />
-      <span>Try it out</span>
-    </a>
-  </div>
 </ContentSection>
