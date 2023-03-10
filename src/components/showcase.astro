@@ -1,9 +1,20 @@
 ---
 import ContentSection from "~/components/content-section.astro";
 import ShowcaseCard from "~/components/showcase-card.astro";
-import { getShowcase } from "~/data/showcase";
 
-const sites = await getShowcase();
+const sites = [
+  {
+    "title": "Eat Playground",
+    "image": "src/data/showcase/images/eat-playground.png",
+    "url": "https://eatplayground.com/"
+  },
+  {
+    "title": "Kajabi",
+    "image": "src/data/showcase/images/kajabi.png",
+    "url": "https://kajabi.com/"
+  }
+];
+
 ---
 
 <ContentSection title="Showcase" id="showcase">
@@ -16,10 +27,5 @@ const sites = await getShowcase();
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       {sites.map((site) => <ShowcaseCard site={site} />)}
     </div>
-    <p class="text-right text-sm">
-      <a class="text-primary" href="https://astro.build/showcase/">
-        ...and more &rarr;
-      </a>
-    </p>
   </div>
 </ContentSection>
