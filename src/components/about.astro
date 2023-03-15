@@ -3,7 +3,7 @@ import { Icon } from "astro-icon";
 import ContentSection from "~/components/content-section.astro";
 ---
 
-<ContentSection title="About" id="intro">
+<ContentSection title="About" id="about">
   <Icon slot="eyebrow" name="simple-icons:airasia" class="h-32" />
   <Fragment slot="lead">
     Who me? I'm a <span class="text-primary">seasoned professional</span> with a decade of experience as an
@@ -11,5 +11,13 @@ import ContentSection from "~/components/content-section.astro";
     Leveraging my expertise, I've now transitioned to building
     <span class="text-primary">high-converting, trustworthy websites</span> for <span class="text-primary">local businesses</span>,
     helping them achieve their online goals with my strategic approach and keen eye for design.
+
+    <a
+      href="mailto:andy4thehuynh@gmail.com"
+      class="flex items-center justify-center gap-1 border-2 border-current px-4 py-2 mt-10"
+    >
+      <Icon pack="mdi" name="email" class="h-8" />
+      <span>Contact me!</span>
+    </a>
   </Fragment>
 </ContentSection>
