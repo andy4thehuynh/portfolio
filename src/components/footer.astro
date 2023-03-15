@@ -5,6 +5,11 @@ import type { FooterLink } from "~/types";
 
 const links: Array<FooterLink> = [
   {
+    url: "mailto:andy4thehuynh@gmail.com",
+    description: "Send an email",
+    icon: "mdi:mail",
+  },
+  {
     url: "https://www.linkedin.com/in/andy-huynh-a9267922/",
     description: "View profile on LinkedIn",
     icon: "fa-brands:linkedin",
@@ -26,7 +31,7 @@ const links: Array<FooterLink> = [
   <div class="absolute inset-0 overflow-hidden opacity-40">
     <HeroImage />
   </div>
-  <ul class="relative grid grid-cols-3 gap-3 sm:grid-cols-3">
+  <ul class="relative grid grid-cols-4 gap-3 sm:grid-cols-4">
     {
       links.map((link) => (
         <li>
